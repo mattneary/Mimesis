@@ -1,0 +1,12 @@
+#!/bin/bash
+case "$1" in
+  record)
+    echo "Recording terminal session."
+    echo "  \`exit\` to finish."
+    shift
+    "${BASH_SOURCE%/*}/start.sh" $*;;
+  play)
+    shift
+    "${BASH_SOURCE%/*}/run.sh" $*;;
+esac
+
