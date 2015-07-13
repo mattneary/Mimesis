@@ -16,16 +16,18 @@ to your `$PATH`.
 ## Usage
 
 ```sh
-$ mimesis record
+$ mimesis record hello_world
 $ # Interact with terminal...
 $ exit
-$ mimesis play
-```
-```sh
-$ mimesis record my_session
-$ exit
-$ ls
-my_session
-$ mimesis play my_session
+$ mimesis publish
+Recording published:
+https://gist.github.com/XXXX
+$ mimesis download https://gist.github.com/XXXX demo
+Recording downloaded:
+
+Mimesis Recording
+Title: hello_world
+$ mimesis play demo
+$ # Interaction and audio are played back
 ```
 
