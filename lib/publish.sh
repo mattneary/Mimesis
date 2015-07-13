@@ -1,6 +1,10 @@
 #!/bin/bash
 file=${1-mimesis}
 
+if ! [ -e ~/.gist ]; then
+  echo "You need to login to Github to publish."
+  gist --login
+fi
 repo=`echo -e "Mimesis Recording\nTitle: $file" | gist -f mimesis.txt`
 hash=`echo "$repo" | grep -o "\/[a-z0-9]\+\$" | grep -o "[a-z0-9]\+"`
 ( git clone "git@gist.github.com:/$hash.git" .mimesis-gist
