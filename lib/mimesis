@@ -4,9 +4,15 @@ case "$1" in
     echo "Recording terminal session."
     echo "  \`exit\` to finish."
     shift
-    "${BASH_SOURCE%/*}/start.sh" $*;;
+    "${BASH_SOURCE%/*}/record.sh" $*;;
   play)
     shift
-    "${BASH_SOURCE%/*}/run.sh" $*;;
+    "${BASH_SOURCE%/*}/play.sh" $*;;
+  publish)
+    shift
+    "${BASH_SOURCE%/*}/publish.sh" $*;;
+  download)
+    shift
+    "${BASH_SOURCE%/*}/download.sh" $*;;
 esac
 
