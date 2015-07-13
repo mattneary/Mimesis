@@ -4,7 +4,8 @@ Record terminal sessions, both screen activity and audio.
 ## Dependencies
 
 ```sh
-$ brew install sox ttyrec
+$ brew tap homebrew/bundle
+$ brew bundle
 ```
 
 ## Installation

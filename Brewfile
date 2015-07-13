@@ -1,0 +1,3 @@
+brew "sox"
+brew "ttyrec"
+
