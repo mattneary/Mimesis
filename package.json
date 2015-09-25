@@ -5,7 +5,8 @@
   "description": "Screencast from the command line",
   "main": "./lib/mimesis",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "brew tap homebrew/bundle && brew bundle"
   },
   "repository": {
     "type": "git",
