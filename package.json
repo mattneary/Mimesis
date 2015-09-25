@@ -1,0 +1,17 @@
+{
+  "name": "mimesis",
+  "author": "“Matt Neary",
+  "version": "0.1.1",
+  "description": "Screencast from the command line",
+  "main": "./lib/mimesis",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattneary/Mimesis.git"
+  },
+  "bin": {
+    "mimesis": "./lib/mimesis"
+  }
+}

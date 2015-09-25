@@ -1,17 +1,11 @@
 # Mimesis
 Record terminal sessions, both screen activity and audio.
 
-## Dependencies
+## Install
 
 ```sh
-$ brew tap homebrew/bundle
-$ brew bundle
+$ npm install -g mimesis
 ```
-
-## Installation
-
-Copy the contents of `/lib` to a folder like `~/bin` and add `lib/mimesis`
-to your `$PATH`.
 
 ## Usage
 
