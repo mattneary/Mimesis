@@ -1,14 +1,5 @@
-#!/bin/bash
-
-# Get the base directory of this project, even if this
-# script has been symlinked
-real_dir() {
-  # get the real dir of the symlinked node binary
-  local path="$1"
-  (cd "$(dirname $0)/$(dirname $(readlink $path))/..";
-   echo "`pwd -P`") 2> /dev/null
-}
-d="$(real_dir $BASH_SOURCE)/lib"
+#!/usr/bin/env cdrepo
+d=$0
 
 case "$1" in
   record)

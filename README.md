@@ -4,7 +4,7 @@ Record terminal sessions, both screen activity and audio.
 ## Install
 
 ```sh
-$ npm install -g mimesis
+$ npm install -g cdrepo mimesis
 ```
 
 ## Usage
